@@ -1,0 +1,13 @@
+from math import pi
+
+prompt = "\nHow many decimal points would you like Pi to be rounded to? (max 15)"
+prompt += "\n(Enter 'quit' when you are finished)"
+
+while True:
+	decimal = input(prompt)
+
+	if decimal == 'quit':
+		break
+	else:
+		decimal = int(decimal)
+		print(f"You asked for Pi to be rounded to {str(decimal)} places: {str(round(pi,decimal))}")
